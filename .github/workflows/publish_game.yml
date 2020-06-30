@@ -1,11 +1,14 @@
+
 on:
   release:
     types: [created, edited]
 
+
 env:
-  PROJECT_NAME: {{ cookiecutter.game_slug }}
-  ITCH_GAME: {{ cookiecutter.game_slug }}
-  ITCH_USER: {{ cookiecutter.itch_user }}
+  PROJECT_NAME: tetrish
+  ITCH_GAME: tetrish
+  ITCH_USER: skar
+
 
 jobs:
   release:
@@ -34,3 +37,4 @@ jobs:
           ITCH_USER: ${{ env.ITCH_USER }}
           PACKAGE: ${{ env.PROJECT_NAME }}--${{ matrix.platform }}.zip
           VERSION: ${{ steps.tagName.outputs.tag }}
+

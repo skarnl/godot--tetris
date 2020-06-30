@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Tetris"
+config/name="Tetrish"
 run/main_scene="res://screens/splash.tscn"
 config/icon="res://assets/images/icon.png"
 
